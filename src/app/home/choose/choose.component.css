@@ -1,0 +1,129 @@
+body {
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.wrapper {
+    position: relative;
+    padding-bottom: 20px;
+    background-color: #e9f4ff;
+}
+.dot-pattern {
+    position: absolute;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#000 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+.subtitle {
+    color: #ff4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 55px;
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #020147;
+}
+.features {
+    display: grid;
+    margin-bottom: 80px;
+}
+.feature {
+    display: flex;
+    align-items: flex-start;
+}
+.feature-icon-1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    background-color: #f0dffa;
+}
+.feature-icon-2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    background-color: #f9ebdd
+}
+.feature-icon-3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-color: #b7f8d0;
+}
+.feature-icon-4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-color: #dddedd;
+}
+.feature-icon img {
+    width: 24px;
+    height: 24px;
+}
+.feature-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.feature-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.cta {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.cta-text {
+    flex: 1;
+}
+.cta-text h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+.cta-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.cta-button {
+    background-color: #5555ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 200px;
+}

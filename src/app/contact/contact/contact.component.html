@@ -1,0 +1,101 @@
+<section class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2> Add Contact</h2>
+                <form (ngSubmit)="onSubmit()">
+
+                    <p>
+                        <label for="firstname">First Name</label> <span>&nbsp;</span>
+                        <input type="text" name="firstname" [(ngModel)]="firstname">
+                    </p>
+
+                    <p>
+                        <label for="lastname">Last Name</label>
+                        <span>&nbsp;</span>
+                        <input type="text" name="lastname" [(ngModel)]="lastname">
+                    </p>
+
+                    <p>
+                        <label for="email">Email </label>
+                        <span>&nbsp;</span>
+                        <input type="text" id="email" name="email" [(ngModel)]="email">
+                    </p>
+                    <p>
+                        <label for="age">Age</label>
+                        <span>&nbsp;</span>
+                        <input type="text" name="age" [(ngModel)]="age">
+                    </p>
+                    <p>
+                        <label for="gender">Geneder</label>
+                        <span>&nbsp;</span>
+                        <input type="radio" value="male" name="gender" [(ngModel)]="gender"> Male
+                        <input type="radio" value="female" name="gender" [(ngModel)]="gender"> Female
+                    </p>
+
+                    <p>
+                        <label for="phone">Mobile Number</label>
+                        <span>&nbsp;</span>
+                        <input type="text" name="phone" [(ngModel)]="phone">
+                    </p>
+
+                    <p>
+                        <label for="pan">Pan Number</label>
+                        <span>&nbsp;</span>
+                        <input type="text" name="pan" [(ngModel)]="pan">
+                    </p>
+
+                    <p>
+                        <label for="aadhar">Aadhar Number</label>
+                        <span>&nbsp;</span>
+                        <input type="text" name="aadhar" [(ngModel)]="aadhar">
+                    </p>
+
+
+                    <p>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </p>
+
+                </form>
+            </div>
+            <div class="col">
+                <div>
+                    <h2> Delete Contact</h2>
+                    <p *ngIf="delete">{{deletedContact.first_name}} {{deletedContact.last_name}} Contact details are
+                        deleted
+                    </p>
+
+                    <form (ngSubmit)="onDelete()">
+                        <p>
+                            <label for="id">Delete ID number</label>
+                            <span>&nbsp;</span>
+                            <input type="text" name="id" [(ngModel)]="id">
+                        </p>
+                        <p>
+                            <button class="btn btn-danger" type="submit">Delete</button>
+                        </p>
+                    </form>
+                </div>
+                <div>
+                    <h2> get contact details</h2>
+                    <div *ngIf="getDets">
+                        <p> Name: {{contactDetail.first_name}} {{contactDetail.last_name}} </p>
+                        <p>Mobile Number: {{contactDetail.mobilenumber}}</p>
+                        <p> age: {{contactDetail.age}}</p>
+                    </div>
+
+                    <form (ngSubmit)="getContactDetail()">
+                        <p>
+                            <label for="getId">Retrieve ID Details</label>
+                            <span>&nbsp;</span>
+                            <input type="text" name="getId" [(ngModel)]="getId">
+                        </p>
+                        <p>
+                            <button class="btn btn-info" type="submit">Get</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
